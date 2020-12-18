@@ -85,8 +85,6 @@ RUN composer create-project "symfony/skeleton ${SYMFONY_VERSION}" . --stability=
 ###> recipes ###
 ###< recipes ###
 
-COPY . .
-
 RUN set -eux; \
 	mkdir -p var/cache var/log; \
 	composer install --prefer-dist --no-dev --no-progress --no-scripts --no-interaction; \
